@@ -201,7 +201,9 @@
     .container{
         display: flex;
         flex-direction: row;
+        
         margin-top: 5%;
+       
         text-align: center;
         align-items: center;
         justify-content: center;
@@ -210,9 +212,9 @@
     }
     .flex1{
         display: flex;
-        flex-direction:column ;
+        flex-direction:row ;
         margin-top: 5%;
-        flex-wrap: nowrap; 
+        flex-wrap: wrap; 
         height: 400px;
         background-color: rgb(90, 17, 17);
         width:220px;
@@ -240,7 +242,7 @@
     .flex3{
         display: flex;  
         flex-direction: column;
-        height: 250px;
+        height:auto;
         width: 80px;
         
         font-size: 24px;
