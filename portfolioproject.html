@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>portfolio</title>
+    <link rel="icon" href="icon.png" type="image/png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha384-...." crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header class="head">
+        <div id="control">
+           <a id="lightmode" href="#">
+            <i id="light"class="fa-solid fa-sun "></i></a>
+           <a id="darkmode" href="#"> <i id="dark" class="fa-solid fa-moon "></i></a>
+        </div>
+    </header>
+        <div class="name">
+            <h1 class="h1"> 
+                <span class="animate">Hello Everyone!</span></h1>
+            <h1>I'm Haarini</h1>
+            <p>A student with passion </p>
+        </div>
+         <div class="image"> 
+          <img src="photo.jpg" alt="profile" class="profileimg">
+        </div>
+        <div class="arrow">
+        <i  class="fa-solid fa-angles-down"></i>
+        </div>
+        <div class="about">
+           <button class="btn3" >About</button>
+           <p class="content">
+            I'm currently  a student studying my undergraduate in avinashilingamuniversity.
+             I'm a computer science student passionate to front end development and web designing.
+            Currently I'm training as a intern in Xtown Company,its helps me to boost my skills as a front end developer
+        </div>
+        
+        <button class="btn"> My Skills</button>
+        <div class="container">  
+          <div class="flex1">
+            <div class="flex3"> <i class="fa-brands fa-html5"></i>
+              <p class="text">Html</p></div>
+            <div class="flex3"><i class="fa-brands fa-css3-alt"></i>
+              <p class="text">Css</p>
+            </div>
+            <div class="flex3"><i class="fa-brands fa-js"></i>
+            <p class="text">JavaScript</p></div>
+            <div class="flex3"><i class="fa-brands fa-python"></i>
+            <p class="text">Python</p></div>
+          </div>
+          <div class="flex2">
+            <div class="flex3"><i class="fa-brands fa-github"></i>
+            <p class="text">GitHub</p></div>
+            <div class="flex3"><i class="fa-brands fa-git"></i>
+            <p class="text">Git</p></div>
+            <div class="flex3"><i class="fa-brands fa-linkedin"></i>
+            <p class="text">LinkedIn</p></div>
+          </div>
+        </div>
+       <button class="btn"> Projects</button>
+        <div class="projects-container">
+        
+        <div class="card1">
+          <div class="card-image">
+            <img src="flextask.jpg" alt="flex">
+            <h3>Flexbox</h3>
+            <h3>A Simple flex box for traffic signs</h3>
+            <p>Using:Html ,CSS </p>
+            <div class="btn2">
+            <button class="btn1"><a href="https://haarinikrishnan.github.io/flex/" target="_blank">Preview</a></button>
+            
+          </div>
+          </div>
+        </div>
+        <div class="card2">
+          <div class="card-image">
+            <img src="animatetask.jpg" alt="ani" class="img2">
+           <h3>Animation</h3>
+            <h3>Simple Animation for modelling a bike</h3>
+            <p>Using:Html ,CSS  </p>
+           <div class="btn2">
+           <button class="btn1"> <a href="https://haarinikrishnan.github.io/animate/" target="_blank">Preview</a></button>
+          
+          </div>
+        </div>
+        </div>
+        </div> 
+        
+        
+        <div class="links-float">
+        <a href="https://github.com/haarinikrishnan"class="github" target="_blank"><i class="fa-brands fa-github"></i></a>
+        <a href="https://www.linkedin.com/in/harini-krishnan-125402349/" class="linkedin" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+        <a href="mailto:haarinikrishnan20@gmail.com" class="email" target="_blank"><i class="fa-solid fa-square-envelope"></i></a>
+        </div> 
+
+        
+   
+   <script>
+
+  const lightModeBtn = document.getElementById("light");
+  const darkModeBtn = document.getElementById("dark");
+  
+  
+  lightModeBtn.addEventListener("click", () => {
+    document.body.classList.remove("dark");
+    document.body.classList.add("light");
+    localStorage.setItem("theme", "light");
+   
+  });
+
+
+  darkModeBtn.addEventListener("click", () => {
+    document.body.classList.remove("light");
+    document.body.classList.add("dark");
+    localStorage.setItem("theme", "dark");
+   
+  });
+
+ 
+  window.addEventListener("DOMContentLoaded", () => {
+    const savedTheme = localStorage.getItem("theme");
+    if (savedTheme === "dark") {
+      document.body.classList.add("dark");
+      
+    } else {
+      document.body.classList.add("light");
+      
+    }
+  });
+
+
+ 
+</script>
+
+
+
+    
+</body>
+</html>
